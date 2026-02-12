@@ -147,7 +147,7 @@ if st.session_state.df is not None:
         st.divider()
         ac1, ac2, ac3 = st.columns([2, 1, 1])
         with ac1:
-            if st.button(f"AI Translate to {target_lang}", use_container_width=True, type="primary"):
+            if st.button(f"Translate to {target_lang}", use_container_width=True, type="primary"):
                 batch = df.iloc[start_idx:end_idx]
                 targets = batch[batch["Translation"].str.strip() == ""]
                 if not targets.empty:
