@@ -76,7 +76,7 @@ if "filename" not in st.session_state: st.session_state.filename = ""
 # --- Sidebar ---
 with st.sidebar:
     st.title("Settings")
-    target_lang = st.selectbox("Target Language", ["Burmese", "Shan", "Mon"])
+    target_lang = st.selectbox("Target Language", ["Burmese", "Shan", "Mon", "S'gaw Karen"])
     st.divider()
     
     if st.session_state.df is not None:
